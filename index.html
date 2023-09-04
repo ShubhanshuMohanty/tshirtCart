@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="sstyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                </ul>
+
+                <li class="nav-item for-li " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <!-- Button trigger modal -->
+                    <!-- <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#exampleModal"> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="2em"
+                        viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <path
+                            d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
+                    </svg>
+
+                    <!-- </button> -->
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"><svg
+                                            xmlns="http://www.w3.org/2000/svg" height="2em"
+                                            viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                            <path
+                                                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
+                                        </svg></h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body ">
+                                    <!-- <div class="col-md-6"> -->
+                                    <div class="for-set-height">
+                                        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative for-hide-card"
+                                            id="card1">
+                                            <div class="col-auto d-none d-lg-block">
+                                                <img src="https://m.media-amazon.com/images/I/71tFUkv1mWL._UX569_.jpg"
+                                                    class="bd-placeholder-img" width="150" height="100" alt="">
+                                            </div>
+                                            <div class="col p-4 d-flex flex-column position-static">
+                                                <strong class="d-inline-block mb-2 text-primary">LEOTUDE
+
+                                                </strong>
+                                                <h6 class="mb-0">Cotton Blend Half Sleeve(xs)</h6>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="mb-1 text-muted">Quantity: <span id="qnt1">1</span></div>
+                                                    <div id="price1">1200 ₹</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <!-- </div> -->
+                                        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative for-hide-card"
+                                            id="card2">
+                                            <div class="col-auto d-none d-lg-block">
+                                                <img src="https://m.media-amazon.com/images/I/91yu4y--XkL._UX569_.jpg"
+                                                    class="bd-placeholder-img" width="150" height="100" alt="">
+                                            </div>
+                                            <div class="col p-4 d-flex flex-column position-static">
+                                                <strong class="d-inline-block mb-2 text-primary">CHKOKKO
+
+                                                </strong>
+                                                <h6 class="mb-0">Men's Cotton Regular Fit Half(xs)</h6>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="mb-1 text-muted">Quantity: <span id="qnt2">1</span></div>
+                                                    <div id="price2">1500 ₹</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative for-hide-card"
+                                            id="card3">
+                                            <div class="col-auto d-none d-lg-block">
+                                                <img src="https://m.media-amazon.com/images/I/81T9WPoOPSL._UY879_.jpg"
+                                                    class="bd-placeholder-img" width="150" height="100" alt="">
+                                            </div>
+                                            <div class="col p-4 d-flex flex-column position-static">
+                                                <strong class="d-inline-block mb-2 text-primary">REYA
+
+                                                </strong>
+                                                <h6 class="mb-0">Men's Regular Fit T-Shirt(s)</h6>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="mb-1 text-muted">Quantity: <span id="qnt3">1</span></div>
+                                                    <div id="price3">231 ₹</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative for-hide-card"
+                                            id="card4">
+                                            <div class="col-auto d-none d-lg-block">
+                                                <img src="https://m.media-amazon.com/images/I/61pD8Fq89IL._UY879_.jpg"
+                                                    class="bd-placeholder-img" width="150" height="100" alt="">
+                                            </div>
+                                            <div class="col p-4 d-flex flex-column position-static">
+                                                <strong class="d-inline-block mb-2 text-primary">London Hills
+
+                                                </strong>
+                                                <h6 class="mb-0">Solid Men Round Neck Half(s)</h6>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="mb-1 text-muted">Quantity: <span id="qnt4">1</span></div>
+                                                    <div id="price4">699 ₹</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative for-hide-card"
+                                            id="card5">
+                                            <div class="col-auto d-none d-lg-block">
+                                                <img src="https://m.media-amazon.com/images/I/71dTI9r18IL._UY879_.jpg"
+                                                    class="bd-placeholder-img" width="150" height="100" alt="">
+                                            </div>
+                                            <div class="col p-4 d-flex flex-column position-static">
+                                                <strong class="d-inline-block mb-2 text-primary">LEOTUDE
+
+                                                </strong>
+                                                <h6 class="mb-0">Regular Fit Half Sleeve Men's(m)</h6>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="mb-1 text-muted">Quantity: <span id="qnt5">1</span></div>
+                                                    <div id="price5">299 ₹</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative for-hide-card"
+                                            id="card6">
+                                            <div class="col-auto d-none d-lg-block">
+                                                <img src="https://m.media-amazon.com/images/I/713XrJq+drL._UY879_.jpg"
+                                                    class="bd-placeholder-img" width="150" height="100" alt="">
+                                            </div>
+                                            <div class="col p-4 d-flex flex-column position-static">
+                                                <strong class="d-inline-block mb-2 text-primary">Allen Solly
+
+                                                </strong>
+                                                <h6 class="mb-0">Men Polo(m)</h6>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="mb-1 text-muted">Quantity: <span id="qnt6">1</span></div>
+                                                    <div id="price6">759 ₹</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative for-hide-card"
+                                            id="card7">
+                                            <div class="col-auto d-none d-lg-block">
+                                                <img src="https://m.media-amazon.com/images/I/51UZhrwvlRL._UY741_.jpg"
+                                                    class="bd-placeholder-img" width="150" height="100" alt="">
+                                            </div>
+                                            <div class="col p-4 d-flex flex-column position-static">
+                                                <strong class="d-inline-block mb-2 text-primary">DAMENSCH
+
+                                                </strong>
+                                                <h6 class="mb-0">Men Polo(ml)</h6>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="mb-1 text-muted">Quantity: <span id="qnt7">1</span></div>
+                                                    <div id="price7">759 ₹</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative for-hide-card"
+                                            id="card8">
+                                            <div class="col-auto d-none d-lg-block">
+                                                <img src="https://m.media-amazon.com/images/I/81AZhg7hamL._UY879_.jpg"
+                                                    class="bd-placeholder-img" width="150" height="100" alt="">
+                                            </div>
+                                            <div class="col p-4 d-flex flex-column position-static">
+                                                <strong class="d-inline-block mb-2 text-primary">U.S. POLO ASSN.
+
+                                                </strong>
+                                                <h6 class="mb-0">Men's Regular fit T-Shirt(ml)</h6>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="mb-1 text-muted">Quantity: <span id="qnt8">1</span></div>
+                                                    <div id="price8">759 ₹</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative for-hide-card"
+                                            id="card9">
+                                            <div class="col-auto d-none d-lg-block">
+                                                <img src="https://m.media-amazon.com/images/I/718vd0zS7ML._UX569_.jpg"
+                                                    class="bd-placeholder-img" width="150" height="100" alt="">
+                                            </div>
+                                            <div class="col p-4 d-flex flex-column position-static">
+                                                <strong class="d-inline-block mb-2 text-primary">Scott International
+
+                                                </strong>
+                                                <h6 class="mb-0">Men's Regular fit T-Shirt(l)</h6>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="mb-1 text-muted">Quantity: <span id="qnt9">1</span></div>
+                                                    <div id="price9">759 ₹</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative for-hide-card"
+                                            id="card10">
+                                            <div class="col-auto d-none d-lg-block">
+                                                <img src="https://m.media-amazon.com/images/I/71mG4Ah49HL._UY879_.jpg"
+                                                    class="bd-placeholder-img" width="150" height="100" alt="">
+                                            </div>
+                                            <div class="col p-4 d-flex flex-column position-static">
+                                                <strong class="d-inline-block mb-2 text-primary">Scott International
+
+                                                </strong>
+                                                <h6 class="mb-0">Men's Regular fit T-Shirt(l)</h6>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="mb-1 text-muted">Quantity: <span id="qnt10">1</span></div>
+                                                    <div id="price10">759 ₹</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative for-hide-card"
+                                            id="card11">
+                                            <div class="col-auto d-none d-lg-block">
+                                                <img src="https://m.media-amazon.com/images/I/71Cc2EcUuIL._UX569_.jpg"
+                                                    class="bd-placeholder-img" width="150" height="100" alt="">
+                                            </div>
+                                            <div class="col p-4 d-flex flex-column position-static">
+                                                <strong class="d-inline-block mb-2 text-primary">Generic
+
+                                                </strong>
+                                                <h6 class="mb-0">T-Shirts for Men - Round Neck(xl)</h6>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="mb-1 text-muted">Quantity: <span id="qnt11">1</span></div>
+                                                    <div id="price11">759 ₹</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative for-hide-card"
+                                            id="card12">
+                                            <div class="col-auto d-none d-lg-block">
+                                                <img src="https://m.media-amazon.com/images/I/812SuLqJp5L._UX569_.jpg"
+                                                    class="bd-placeholder-img" width="150" height="100" alt="">
+                                            </div>
+                                            <div class="col p-4 d-flex flex-column position-static">
+                                                <strong class="d-inline-block mb-2 text-primary">KART BLACK
+
+                                                </strong>
+                                                <h6 class="mb-0">T-Shirts for Men - Round Neck(xl)</h6>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="mb-1 text-muted">Quantity: <span id="qnt12">1</span></div>
+                                                    <div id="price12">759 ₹</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative for-hide-card"
+                                            id="card13" >
+                                            <div class="col-auto d-none d-lg-block">
+                                                <img src="https://m.media-amazon.com/images/I/71hTxMBuZ6L._UY879_.jpg"
+                                                    class="bd-placeholder-img" width="150" height="100" alt="">
+                                            </div>
+                                            <div class="col p-4 d-flex flex-column position-static">
+                                                <strong class="d-inline-block mb-2 text-primary">Johnson's club
+
+                                                </strong>
+                                                <h6 class="mb-0">T-Shirts for Men - Round Neck(xxl)</h6>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="mb-1 text-muted">Quantity: <span id="qnt13">1</span></div>
+                                                    <div id="price13">759 ₹</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative for-hide-card"
+                                            id="card14">
+                                            <div class="col-auto d-none d-lg-block">
+                                                <img src="https://m.media-amazon.com/images/I/51x2c7-4WQL._UY879_.jpg"
+                                                    class="bd-placeholder-img" width="150" height="100" alt="">
+                                            </div>
+                                            <div class="col p-4 d-flex flex-column position-static">
+                                                <strong class="d-inline-block mb-2 text-primary">Bigbanana
+
+                                                </strong>
+                                                <h6 class="mb-0">Plus Size Men's Regular Fit Polo(xxl)</h6>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="mb-1 text-muted">Quantity: <span id="qnt14">1</span></div>
+                                                    <div id="price14">669 ₹</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer flex justify-content-between">
+                                    <div type="button" class="btn btn-dark"
+                                        >Subtotal: <span id="tot">0</span></div>
+                                    <button type="button" class="btn btn-primary">CHECKOUT</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <div id="cntOrd">
+                    0
+                </div>
+
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="sidebar border border-right col-md-3 col-lg-2 p-0 bg-body-tertiary">
+                <!-- <div class="offcanvas-md offcanvas-end bg-body-tertiary" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel"> -->
+                <b>SIZES</b>
+                <div class="container cnt">
+                    <input id="btnsAll" class="btns" checked type="checkbox" name="selector">
+                    <label for="btnsAll" class="btnl" id="btnAll">All</label>
+
+                    <input id="btns1" class="btns" type="checkbox" name="selector">
+                    <label for="btns1" class="btnl" id="btn1">XS</label>
+
+                    <input type="checkbox" name="selector" id="btns2" class="btns">
+                    <label for="btns2" class="btnl" id="btn2">S</label>
+
+                    <input type="checkbox" name="selector" id="btns3" class="btns">
+                    <label for="btns3" class="btnl" id="btn3">M</label>
+
+                    <input type="checkbox" name="selector" id="btns4" class="btns">
+                    <label for="btns4" class="btnl" id="btn4">ML</label>
+
+                    <input type="checkbox" name="selector" id="btns5" class="btns">
+                    <label for="btns5" class="btnl" id="btn5">L</label>
+
+                    <input type="checkbox" name="selector" id="btns6" class="btns">
+                    <label for="btns6" class="btnl" id="btn6">XL</label>
+
+                    <input type="checkbox" name="selector" id="btns7" class="btns">
+                    <label for="btns7" class="btnl" id="btn7">XXL</label>
+                </div>
+                <!-- </div> -->
+            </div>
+
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <div class="container">
+
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                        <div class="col" id="xs1">
+                            <div class="card shadow-sm">
+                                <img src="https://m.media-amazon.com/images/I/71tFUkv1mWL._UX569_.jpg"
+                                    class="bd-placeholder-img card-img-top img1" width="100%" height="325" alt="">
+                                <div class="card-body">
+                                    <p class="card-text">LEOTUDE</p>
+                                    <p class="card-text">Cotton Blend Half Sleeve</p>
+                                    <p>2000₹</p>
+                                    <div class="d-grid gap-2">
+                                        <button class="btn btn-warning" type="button" id="cart1">Add To Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" id="xs2">
+                            <div class="card shadow-sm">
+                                <img src="https://m.media-amazon.com/images/I/91yu4y--XkL._UX569_.jpg"
+                                    class="bd-placeholder-img card-img-top img2" width="100%" height="325" alt="">
+                                <div class="card-body">
+                                    <p class="card-text">CHKOKKO</p>
+                                    <p class="card-text">Men's Cotton Regular Fit Half</p>
+                                    <p>1500₹</p>
+                                    <div class="d-grid gap-2">
+                                        <button class="btn btn-warning" type="button" id="cart2">Add To Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" id="s1">
+                            <div class="card shadow-sm">
+                                <img src="https://m.media-amazon.com/images/I/81T9WPoOPSL._UY879_.jpg"
+                                    class="bd-placeholder-img card-img-top img3" width="100%" height="325" alt="">
+                                <div class="card-body">
+                                    <p class="card-text">REYA</p>
+                                    <p class="card-text">Men's Regular Fit T-Shirt</p>
+                                    <p>231₹</p>
+                                    <div class="d-grid gap-2">
+                                        <button class="btn btn-warning" type="button" id="cart3">Add To Cart</button>
+                                    </div>
+                                </div>
+                                <!-- </div> -->
+                            </div>
+                        </div>
+
+                        <div class="col" id="s2">
+                            <div class="card shadow-sm">
+                                <img src="https://m.media-amazon.com/images/I/61pD8Fq89IL._UY879_.jpg"
+                                    class="bd-placeholder-img card-img-top img4" width="100%" height="325" alt="">
+                                <div class="card-body">
+                                    <p class="card-text">London Hills</p>
+                                    <p class="card-text">Solid Men Round Neck Half</p>
+                                    <p>699₹</p>
+                                    <div class="d-grid gap-2">
+                                        <button class="btn btn-warning" type="button" id="cart4">Add To Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" id="m1">
+                            <div class="card shadow-sm">
+                                <img src="https://m.media-amazon.com/images/I/71dTI9r18IL._UY879_.jpg"
+                                    class="bd-placeholder-img card-img-top img5" width="100%" height="325" alt="">
+                                <div class="card-body">
+                                    <p class="card-text">LEOTUDE</p>
+                                    <p class="card-text">Regular Fit Half Sleeve Men's</p>
+                                    <p>299₹</p>
+                                    <div class="d-grid gap-2">
+                                        <button class="btn btn-warning" type="button" id="cart5">Add To Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" id="m2">
+                            <div class="card shadow-sm">
+                                <img src="https://m.media-amazon.com/images/I/713XrJq+drL._UY879_.jpg"
+                                    class="bd-placeholder-img card-img-top img6" width="100%" height="325" alt="">
+                                <div class="col">
+                                    <div class="card-body">
+                                        <p class="card-text">Allen Solly</p>
+                                        <p class="card-text">Men Polo</p>
+                                        <p>759₹</p>
+                                        <div class="d-grid gap-2">
+                                            <button class="btn btn-warning" type="button" id="cart6">Add To
+                                                Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col" id="ml1">
+                            <div class="card shadow-sm">
+                                <img src="https://m.media-amazon.com/images/I/51UZhrwvlRL._UY741_.jpg"
+                                    class="bd-placeholder-img card-img-top img7" width="100%" height="325" alt="">
+                                <div class="col">
+                                    <div class="card-body">
+                                        <p class="card-text">DAMENSCH</p>
+                                        <p class="card-text">Men Polo</p>
+                                        <p>559₹</p>
+                                        <div class="d-grid gap-2">
+                                            <button class="btn btn-warning" type="button" id="cart7">Add To
+                                                Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" id="ml2">
+                            <div class="card shadow-sm">
+                                <img src="https://m.media-amazon.com/images/I/81AZhg7hamL._UY879_.jpg"
+                                    class="bd-placeholder-img card-img-top img8" width="100%" height="325" alt="">
+                                <div class="col">
+                                    <div class="card-body">
+                                        <p class="card-text">U.S. POLO ASSN.</p>
+                                        <p class="card-text">Men's Regular fit T-Shirt</p>
+                                        <p>867₹</p>
+                                        <div class="d-grid gap-2">
+                                            <button class="btn btn-warning" type="button" id="cart8">Add To
+                                                Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" id="l1">
+                            <div class="card shadow-sm">
+                                <img src="https://m.media-amazon.com/images/I/718vd0zS7ML._UX569_.jpg"
+                                    class="bd-placeholder-img card-img-top img9" width="100%" height="325" alt="">
+                                <div class="col">
+                                    <div class="card-body">
+                                        <p class="card-text">Scott International</p>
+                                        <p class="card-text">Men's Regular fit T-Shirt</p>
+                                        <p>529₹</p>
+                                        <div class="d-grid gap-2">
+                                            <button class="btn btn-warning" type="button" id="cart9">Add To
+                                                Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" id="l2">
+                            <div class="card shadow-sm">
+                                <img src="https://m.media-amazon.com/images/I/71mG4Ah49HL._UY879_.jpg"
+                                    class="bd-placeholder-img card-img-top img10" width="100%" height="325" alt="">
+                                <div class="col">
+                                    <div class="card-body">
+                                        <p class="card-text">AMERICAN CREW</p>
+                                        <p class="card-text">Polo Collar T-Shirt for Plus Size Men</p>
+                                        <p>719₹</p>
+                                        <div class="d-grid gap-2">
+                                            <button class="btn btn-warning" type="button" id="cart10">Add To
+                                                Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" id="xl1">
+                            <div class="card shadow-sm">
+                                <img src="https://m.media-amazon.com/images/I/71Cc2EcUuIL._UX569_.jpg"
+                                    class="bd-placeholder-img card-img-top img11" width="100%" height="325" alt="">
+                                <div class="col">
+                                    <div class="card-body">
+                                        <p class="card-text">Generic</p>
+                                        <p class="card-text">T-Shirts for Men - Round Neck,</p>
+                                        <p>399₹</p>
+                                        <div class="d-grid gap-2">
+                                            <button class="btn btn-warning" type="button" id="cart11">Add To
+                                                Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" id="xl2">
+                            <div class="card shadow-sm">
+                                <img src="https://m.media-amazon.com/images/I/812SuLqJp5L._UX569_.jpg"
+                                    class="bd-placeholder-img card-img-top img12" width="100%" height="325" alt="">
+                                <div class="card-body">
+                                    <p class="card-text">KART BLACK</p>
+                                    <p class="card-text">T-Shirts for Men - Round Neck,</p>
+                                    <p>354₹</p>
+                                    <div class="d-grid gap-2">
+                                        <button class="btn btn-warning" type="button" id="cart12">Add To Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" id="xxl1">
+                            <div class="card shadow-sm">
+                                <img src="https://m.media-amazon.com/images/I/71hTxMBuZ6L._UY879_.jpg"
+                                    class="bd-placeholder-img card-img-top img13" width="100%" height="325" alt="">
+                                <div class="card-body">
+                                    <p class="card-text">Johnson's club</p>
+                                    <p class="card-text">T-Shirts for Men - Round Neck,</p>
+                                    <p>388₹</p>
+                                    <div class="d-grid gap-2">
+                                        <button class="btn btn-warning" type="button" id="cart13">Add To Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" id="xxl2">
+                            <div class="card shadow-sm">
+                                <img src="https://m.media-amazon.com/images/I/51x2c7-4WQL._UY879_.jpg"
+                                    class="bd-placeholder-img card-img-top img14" width="100%" height="325" alt="">
+                                <div class="card-body">
+                                    <p class="card-text">Bigbanana</p>
+                                    <p class="card-text">Plus Size Men's Regular Fit Polo</p>
+                                    <p>669₹</p>
+                                    <div class="d-grid gap-2">
+                                        <button class="btn btn-warning" type="button" id="cart14">Add To Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
